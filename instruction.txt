@@ -1,0 +1,19 @@
+python -m venv venv
+python3 -m venv venv
+
+source venv/bin/activate        для МАС
+venv\Scripts\activate           для Windows
+
+pip freeze
+pip freeze > requirements.txt               - создание библиотеки
+
+pip install -r requirements.txt             - запись библиотеки
+
+РЕШЕНИЕ ДЛЯ МАК -в системном терминале вот такую команду запустили: python3 -m pip install --upgrade pip
+
+РЕШЕНИЕ ДЛЯ WINDOWS - В Windows при установке Python необходимо было установить галочку для установки pip, 
+установить путь Python в папку с:\Program Files, а не в User, и обязательно поставить галочку add PATH
+
+иногнда в винде в командной строке - Set-ExecutionPolicy -ExecutionPolicy AllSigned , если не активируется
+
+Set-ExecutionPolicy Unrestricted - эту коммаду в повер шел ввведите
